@@ -1,3 +1,5 @@
+package BinarySearch;
+
 /**
  * @author chelsea
  * @date 2019-11-25

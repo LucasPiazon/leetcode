@@ -1,3 +1,5 @@
+package BackTracing;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,7 +10,7 @@ import java.util.List;
 public class Q401 {
 
     public static void main(String[] args) {
-        Solution solution=new Solution();
+        Solution solution = new Solution();
         solution.readBinaryWatch(1);
 
     }
@@ -21,11 +23,11 @@ public class Q401 {
             int[] watchs = new int[]{1, 2, 4, 8, 1, 2, 4, 8, 16, 32};
             int[] flags = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
             List<String> res = new ArrayList<>();
-            readBinaryWatchHelper(res, watchs, flags, 0, num,0);
+            readBinaryWatchHelper(res, watchs, flags, 0, num, 0);
             return res;
         }
 
-        private void readBinaryWatchHelper(List<String> res, int[] watchs, int[] flags, int pos, int num,int deep) {
+        private void readBinaryWatchHelper(List<String> res, int[] watchs, int[] flags, int pos, int num, int deep) {
             if (deep == num) {
                 String str = getClock(watchs, flags);
                 if (str == null) {
@@ -36,7 +38,7 @@ public class Q401 {
             }
             for (int i = pos; i < watchs.length; i++) {
                 flags[i] = 1;
-                readBinaryWatchHelper(res, watchs, flags, i + 1, num,deep+1);
+                readBinaryWatchHelper(res, watchs, flags, i + 1, num, deep + 1);
                 flags[i] = 0;
             }
 
@@ -49,7 +51,7 @@ public class Q401 {
                 if (i < 4 && flags[i] == 1) {
                     hours += watchs[i];
                 }
-                if (i >=4 && flags[i] == 1) {
+                if (i >= 4 && flags[i] == 1) {
                     minutes += watchs[i];
                 }
             }

@@ -1,3 +1,5 @@
+package BackTracing;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -13,7 +15,7 @@ public class Q79 {
         Solution solution = new Solution();
         char[][] board = new char[][]{{'a'}};
         solution.exist(board, "ab");
-        IntStream.range(1,9).boxed().collect(Collectors.toList());
+        IntStream.range(1, 9).boxed().collect(Collectors.toList());
 
     }
 

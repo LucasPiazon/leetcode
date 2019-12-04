@@ -1,3 +1,5 @@
+package BackTracing;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,8 +13,8 @@ public class Q39 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] candidates=new int[]{2,3,6,7};
-        solution.combinationSum(candidates,7);
+        int[] candidates = new int[]{2, 3, 6, 7};
+        solution.combinationSum(candidates, 7);
 
     }
 
@@ -24,9 +26,9 @@ public class Q39 {
             List<List<Integer>> res = new ArrayList<>();
             List<Integer> list = new ArrayList<>();
             combinationSumHelper(res, list, 0, candidates, target);
-            char[][] chars=null;
-            for(int i=0;i<chars.length;i++){
-                for(int j=0;j<chars[i].length;j++){
+            char[][] chars = null;
+            for (int i = 0; i < chars.length; i++) {
+                for (int j = 0; j < chars[i].length; j++) {
 
                 }
             }

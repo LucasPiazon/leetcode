@@ -12,12 +12,12 @@ import java.util.stream.Collectors;
 public class Q46 {
 
     public static void main(String[] args) {
-        Solution solution=new Solution();
-        int[] nums=new int[]{3,1,2,4};
+        Solution solution = new Solution();
+        int[] nums = new int[]{3, 1, 2, 4};
         solution.permute(nums);
     }
 
-   static class Solution {
+    static class Solution {
         public List<List<Integer>> permute(int[] nums) {
             if (nums == null || nums.length == 0) {
                 return new ArrayList<>();

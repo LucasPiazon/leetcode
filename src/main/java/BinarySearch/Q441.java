@@ -9,7 +9,7 @@ package BinarySearch;
 public class Q441 {
 
     public static void main(String[] args) {
-        Solution solution=new Solution();
+        Solution solution = new Solution();
         solution.arrangeCoins(1804289383);
     }
 

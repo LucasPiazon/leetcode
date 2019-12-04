@@ -34,19 +34,19 @@ public class Q315 {
 
         //寻找第一个==target的数
         private int search(int[] temps, int target) {
-            int start=0;
-            int end=temps.length-1;
-            while(start+1<end){
-                int mid=start+(end-start)/2;
-                if(target<=temps[mid]){
-                    end=mid;
-                }else{
-                    start=mid;
+            int start = 0;
+            int end = temps.length - 1;
+            while (start + 1 < end) {
+                int mid = start + (end - start) / 2;
+                if (target <= temps[mid]) {
+                    end = mid;
+                } else {
+                    start = mid;
                 }
             }
-            if(temps[start]==target){
+            if (temps[start] == target) {
                 return start;
-            }else{
+            } else {
                 return end;
             }
         }

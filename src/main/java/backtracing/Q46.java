@@ -1,4 +1,4 @@
-package BackTracing;
+package backtracing;
 
 import java.util.*;
 import java.util.stream.Collectors;

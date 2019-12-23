@@ -1,6 +1,4 @@
-package BinaryTree;
-
-import java.util.List;
+package binarytree;
 
 /**
  * @author chelsea

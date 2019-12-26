@@ -41,7 +41,7 @@ public class Q123 {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] num = {3, 3, 5, 0, 0, 3, 1, 4};
+        int[] num = {1, 2};
         System.out.println(solution.maxProfit(num));
     }
 }

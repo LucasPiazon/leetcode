@@ -9,6 +9,7 @@ package dp;
 public class Q121 {
 
     static class Solution {
+
         public int maxProfit(int[] prices) {
             int m = prices.length;
             if (m == 0 || m == 1) {
